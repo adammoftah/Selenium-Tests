@@ -1,0 +1,128 @@
+{
+  "id": "53b69aae-179d-4e55-9b1f-e941670c5e23",
+  "version": "2.0",
+  "name": "PongPro",
+  "url": "https://ennead-uat.connect.c-360.io/pulse",
+  "tests": [{
+    "id": "cc17f2b7-aeee-4ec2-b095-e0cefb31f39f",
+    "name": "PongPro Login and Logout",
+    "commands": [{
+      "id": "97e308ea-2313-4132-91da-2415a72331cb",
+      "comment": "",
+      "command": "open",
+      "target": "https://ennead-uat.connect.c-360.io/login",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "27e804f0-742f-4cad-bbca-7f9c324f5b7f",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1512x883",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "271564fb-d880-44f6-869f-a4997eb3eccc",
+      "comment": "",
+      "command": "type",
+      "target": "name=email",
+      "targets": [
+        ["name=email", "name"],
+        ["css=.form-group__fields:nth-child(2) > .auth-input", "css:finder"],
+        ["xpath=//input[@name='email']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div[2]/div[2]/section/div[2]/div/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "pongtester1@gmail.com"
+    }, {
+      "id": "c7600329-7939-46b9-8453-1110c8745021",
+      "comment": "",
+      "command": "type",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=.form-group__fields:nth-child(3) > .auth-input", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div[2]/div[2]/section/div[2]/div/form/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "Critereon1!"
+    }, {
+      "id": "394b92cf-6df7-45a1-8260-9d5fd93e60e6",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-text",
+      "targets": [
+        ["css=.btn-text", "css:finder"],
+        ["xpath=//div[@id='root']/div[2]/div[2]/section/div[2]/div/form/div[3]/button/span", "xpath:idRelative"],
+        ["xpath=//button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Sign In')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8f18386e-4f6a-4b95-9e9b-4560bc9203b1",
+      "comment": "",
+      "command": "click",
+      "target": "css=.avatar-presence",
+      "targets": [
+        ["css=.avatar-presence", "css:finder"],
+        ["xpath=//div[@id='root']/div[2]/div[2]/div/nav/div/div[4]/div/button/div/div/div/div/div/div[2]", "xpath:idRelative"],
+        ["xpath=//div/div/div/div/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "55d5aa2f-2005-4fc4-9142-4979edc8f6bd",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.avatar-presence",
+      "targets": [
+        ["css=.avatar-presence", "css:finder"],
+        ["xpath=//div[@id='root']/div[2]/div[2]/div/nav/div/div[4]/div/button/div/div/div/div/div/div[2]", "xpath:idRelative"],
+        ["xpath=//div/div/div/div/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c4458568-0879-4020-9b91-85f48c0032dd",
+      "comment": "",
+      "command": "click",
+      "target": "css=.account-dropdown__item:nth-child(13) > .account-dropdown__item__text",
+      "targets": [
+        ["css=.account-dropdown__item:nth-child(13) > .account-dropdown__item__text", "css:finder"],
+        ["xpath=//li/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "19f47303-2446-4b61-844f-891e76b86e67",
+      "comment": "",
+      "command": "click",
+      "target": "css=.pb-2",
+      "targets": [
+        ["css=.pb-2", "css:finder"],
+        ["xpath=//div[@id='root']/div[2]/div[2]/section/div[2]/div/form/div", "xpath:idRelative"],
+        ["xpath=//form/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c6562f18-07ab-4386-a7f2-329a16e63c81",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.pb-2 > .form-label",
+      "targets": [
+        ["css=.pb-2 > .form-label", "css:finder"],
+        ["xpath=//div[@id='root']/div[2]/div[2]/section/div[2]/div/form/div/label", "xpath:idRelative"],
+        ["xpath=//label", "xpath:position"],
+        ["xpath=//label[contains(.,'Email')]", "xpath:innerText"]
+      ],
+      "value": "Email"
+    }]
+  }],
+  "suites": [{
+    "id": "2d39f872-e4f4-4f85-96e4-ec738dc85a1a",
+    "name": "PongPro",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["https://ennead-uat.connect.c-360.io/pulse"],
+  "plugins": []
+}
